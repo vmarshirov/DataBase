@@ -1,3 +1,7 @@
+<strong>Обязательно</strong>
+<br>Обновить Python в соответствии с рекомендациями в https://github.com/vmarshirov/WebApplicationsDevelopment/tree/main/files
+
+
 ### !!! utf-8
 
 ### su
@@ -16,71 +20,6 @@ https://pip.pypa.io/en/stable/
 https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment
 
 
-
-## django010Project
-
-### для не Windows, использовать терминал
-
- 
-su
-
-apt-get update
-
-apt install python3 -venv
-
-exit
-
-cd
-
-mkdir project01
-
-cd project01
-
-python3 -m venv env
-
-. env/bin/activate
-
-pip install --upgrade pip
-
-pip list
-
-py -m pip install Django или  pip install -U django==8.0.4 или (если восстанавливаем из архива) pip install -r requirements.txt  
-
-pip list
-
-pip freeze > requirements.txt
-
-django-admin startproject project01 ../project01
-
-dir
-
-python manage.py runserver или (если уникальный ip)  python manage.py runserver 10.0.2.15:8000
-
-Ctrl + C
-
-редактируем project01/settings.py
-
-ALLOWED_HOSTS = ["*"],
-
-python manage.py runserver 
-
-deactivate
-
-#### Разворачиваем из архива 
-
-cd project01
-
-python3 -m venv env
-
-. env/bin/activate
-
-pip install --upgrade pip
-
-pip list
-
-pip install -r requirements.txt
-
-python manage.py runserver
 
 ### Для Windows: 
 
@@ -181,4 +120,70 @@ iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 80
 ### Готовим новую конфигурацию 
 
 pip freeze > requirements.txt
+
+
+
+
+### для не Windows, использовать терминал
+
+ 
+su
+
+apt-get update
+
+apt install python3 -venv
+
+exit
+
+cd
+
+mkdir project01
+
+cd project01
+
+python3 -m venv env
+
+. env/bin/activate
+
+pip install --upgrade pip
+
+pip list
+
+py -m pip install Django или  pip install -U django==8.0.4 или (если восстанавливаем из архива) pip install -r requirements.txt  
+
+pip list
+
+pip freeze > requirements.txt
+
+django-admin startproject project01 ../project01
+
+dir
+
+python manage.py runserver или (если уникальный ip)  python manage.py runserver 10.0.2.15:8000
+
+Ctrl + C
+
+редактируем project01/settings.py
+
+ALLOWED_HOSTS = ["*"],
+
+python manage.py runserver 
+
+deactivate
+
+#### Разворачиваем из архива 
+
+cd project01
+
+python3 -m venv env
+
+. env/bin/activate
+
+pip install --upgrade pip
+
+pip list
+
+pip install -r requirements.txt
+
+python manage.py runserver
 
