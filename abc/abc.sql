@@ -3,9 +3,9 @@ DROP TABLE orm_abc_app_abcmodel;
 CREATE TABLE IF NOT EXISTS "orm_abc_app_abcmodel" 
 ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, 
 "task" varchar(255) NOT NULL DEFAULT "Формулировка задачи", 
-"a" integer NOT NULL, 
-"b" integer NOT NULL, 
-"c" integer NOT NULL,
+"a" integer NOT NULL DEFAULT 10, 
+"b" integer NOT NULL DEFAULT 20, 
+"c" integer NOT NULL DEFAULT 30,
 "result" varchar(255) NOT NULL DEFAULT "нет результата"
 )
 
