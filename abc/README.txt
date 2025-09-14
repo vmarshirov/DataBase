@@ -6,4 +6,4 @@ sqlite3
 
 .mode column
 .header on
-.read abc.sql
+.read abc/abc.sql
