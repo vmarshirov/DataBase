@@ -28,4 +28,6 @@ INSERT INTO busines (s_name, s_amount, s_price) VALUES  ('пироги', 200, 60
 
 SELECT * FROM busines;
 
+UPDATE busines SET r_amount = 5 WHERE BusinesId ==2
+
 SELECT SUM(r_amount * r_price) AS Затраты, SUM(s_amount * s_price) AS Выручка, SUM(s_amount * s_price) - SUM(r_amount * r_price) AS Прибыль FROM busines;
