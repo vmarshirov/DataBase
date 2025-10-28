@@ -1,9 +1,11 @@
 sqlite3
-.open sqlite3.db
+
+
+.open abc.db
 .databases
 .tables
-.schema albums
-
-.mode column
+.schema orm_abc_app_abcmodel
+.mode table
 .header on
+
 .read abc/abc.sql
