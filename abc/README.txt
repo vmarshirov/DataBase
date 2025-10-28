@@ -1,7 +1,7 @@
 sqlite3
 
 
-.open abc.db
+.open abc/abc.db
 .databases
 .tables
 .schema orm_abc_app_abcmodel
